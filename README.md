@@ -1,4 +1,4 @@
-# TaskMaster - Ứng Dụng TodoList Đầy Đủ Chức Năng (Vite + React + Supabase)
+# ToDo - Ứng Dụng Quản Lý Công Việc Đầy Đủ Chức Năng (Vite + React + Supabase)
 
 Ứng dụng quản lý công việc hiện đại, bảo mật và trực quan được xây dựng bằng **Vite**, **React (JavaScript)** và **Supabase Backend as a Service (BaaS)**.
 

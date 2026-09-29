@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { authService } from '../services/authService';
-import { Mail, Lock, CheckSquare, Loader2 } from 'lucide-react';
+import { Mail, Lock, Loader2 } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 export default function AuthPage({ onNotify }) {
   const [isLoginMode, setIsLoginMode] = useState(true);
@@ -63,10 +64,10 @@ export default function AuthPage({ onNotify }) {
     <div className="auth-wrapper">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="auth-logo">
-            <CheckSquare size={36} color="#fff" />
+          <div className="auth-logo-wrapper">
+            <img src={logoImg} alt="ToDo Logo" className="auth-logo-img" />
           </div>
-          <h1 className="auth-title">TaskMaster</h1>
+          <h1 className="auth-title">ToDo</h1>
           <p className="auth-subtitle">
             {isLoginMode ? 'Đăng nhập để quản lý công việc của bạn' : 'Tạo tài khoản mới hoàn toàn miễn phí'}
           </p>

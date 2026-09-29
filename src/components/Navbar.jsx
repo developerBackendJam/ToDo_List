@@ -1,14 +1,13 @@
 import React from 'react';
-import { CheckSquare, LogOut, User } from 'lucide-react';
+import { LogOut, User } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 export default function Navbar({ user, onSignOut }) {
   return (
     <header className="navbar">
       <div className="nav-brand">
-        <div className="brand-icon">
-          <CheckSquare size={22} />
-        </div>
-        <span>TaskMaster</span>
+        <img src={logoImg} alt="ToDo Logo" className="brand-logo-img" />
+        <span>ToDo</span>
       </div>
 
       <div className="nav-user">
